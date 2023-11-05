@@ -1,0 +1,63 @@
+[
+    {
+      "foodName": "Spaghetti Carbonara",
+      "foodImage": "https://img.freepik.com/premium-photo/pasta-spaghetti-bolognese-tasty-appetizing-italian-spaghetti-with-bolognese-sauce-tomato-sauce-cheese-parmesan-basil-white-plate-old-wooden-rustic-table-background-top-view_253362-17410.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Italian",
+      "price": 12.99,
+      "quantity": 2,
+      "foodOrigin": "Italy",
+      "madeBy": "Trattoria Nonna",
+      "description": "Classic Italian pasta dish made with eggs, Pecorino Romano cheese, pancetta, and black pepper."
+    },
+    {
+      "foodName": "Sushi Roll",
+      "foodImage": "https://img.freepik.com/free-photo/man-holding-sticks-with-tempura-roll-rice-crab-cream-cheese-sesame-eel-ginger-wasabi-side-view_141793-3566.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Japanese",
+      "price": 14.50,
+      "quantity": 3,
+      "foodOrigin": "Japan",
+      "madeBy": "Sushi Master",
+      "description": "Fresh and delicious sushi rolls with various ingredients, wrapped in seaweed and rice."
+    },
+    {
+      "foodName": "Taco",
+      "foodImage": "https://img.freepik.com/free-photo/fresh-beef-taco-wooden-table-with-sauce-generative-ai_188544-8042.jpg?w=826&t=st=1699213792~exp=1699214392~hmac=e836ea534541e7b071be268dca89868803294c1e2fd10e1b83e546661a1367bb",
+      "foodCategory": "Mexican",
+      "price": 8.99,
+      "quantity": 5,
+      "foodOrigin": "Mexico",
+      "madeBy": "Taco Truck",
+      "description": "Authentic Mexican street food: soft tortillas filled with seasoned meat, salsa, and toppings."
+    },
+    {
+      "foodName": "Margherita Pizza",
+      "foodImage": "https://img.freepik.com/premium-photo/traditional-italian-pizza-vegetables-ingredients-dark-background-pizza-is-cooked-oven_372197-4064.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Italian",
+      "price": 10.99,
+      "quantity": 4,
+      "foodOrigin": "Italy",
+      "madeBy": "Pizzeria Napoli",
+      "description": "Classic Margherita pizza with tomato sauce, fresh mozzarella, basil, and olive oil."
+    },
+    {
+      "foodName": "Chicken Curry",
+      "foodImage": "https://img.freepik.com/free-photo/curry-with-chicken-onions-indian-food-asian-cuisine_2829-4415.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Indian",
+      "price": 11.99,
+      "quantity": 2,
+      "foodOrigin": "India",
+      "madeBy": "Curry House",
+      "description": "A flavorful and spicy chicken curry served with rice or naan bread."
+    },
+    {
+      "foodName": "Caesar Salad",
+      "foodImage": "https://img.freepik.com/free-photo/side-view-caesar-salad-with-chicken-parmesan-cheese-white-bowl-wooden-board_140725-11875.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Salad",
+      "price": 7.99,
+      "quantity": 6,
+      "foodOrigin": "United States",
+      "madeBy": "Salad Bar",
+      "description": "A classic Caesar salad with romaine lettuce, croutons, Parmesan cheese, and Caesar dressing."
+    }
+  ]
+  
