@@ -1,4 +1,6 @@
-[
+
+  [
+
     {
       "foodName": "Spaghetti Carbonara",
       "foodImage": "https://img.freepik.com/premium-photo/pasta-spaghetti-bolognese-tasty-appetizing-italian-spaghetti-with-bolognese-sauce-tomato-sauce-cheese-parmesan-basil-white-plate-old-wooden-rustic-table-background-top-view_253362-17410.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
@@ -58,6 +60,209 @@
       "foodOrigin": "United States",
       "madeBy": "Salad Bar",
       "description": "A classic Caesar salad with romaine lettuce, croutons, Parmesan cheese, and Caesar dressing."
+    },
+    {
+      "foodName": "Beef Stroganoff",
+      "foodImage": "https://img.freepik.com/free-photo/freshly-cooked-gourmet-meal-ready-eat-generated-by-ai_24640-81613.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Russian",
+      "price": 15.99,
+      "quantity": 7,
+      "foodOrigin": "Russia",
+      "madeBy": "Tsar's Kitchen",
+      "description": "Tender beef strips in a creamy mushroom sauce, served over egg noodles."
+    },
+    {
+      "foodName": "Mango Sticky Rice",
+      "foodImage": "https://img.freepik.com/free-photo/fresh-ripe-mango-sticky-rice-with-coconut-milk-dark-surface_1150-41931.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Thai",
+      "price": 9.50,
+      "quantity": 14,
+      "foodOrigin": "Thailand",
+      "madeBy": "Sweet Mango Delights",
+      "description": "A delightful Thai dessert with sweet mango, sticky rice, and coconut sauce."
+    },
+    {
+      "foodName": "Gyros Platter",
+      "foodImage": "https://img.freepik.com/free-photo/arabic-kebab-sandwich-top-view_23-2148651073.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Greek",
+      "price": 12.99,
+      "quantity": 10,
+      "foodOrigin": "Greece",
+      "madeBy": "Olympus Taverna",
+      "description": "Savor the flavors of seasoned meat, pita bread, and tzatziki sauce in a Greek gyro platter."
+    },
+    {
+      "foodName": "Pancakes with Maple Syrup",
+      "foodImage": "https://img.freepik.com/free-photo/close-up-view-delicious-alfajores_23-2148740189.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Breakfast",
+      "price": 7.99,
+      "quantity": 20,
+      "foodOrigin": "United States",
+      "madeBy": "Sunny Mornings Cafe",
+      "description": "Fluffy buttermilk pancakes served with warm maple syrup and a pat of butter."
+    },
+    {
+      "foodName": "Lamb Biryani",
+      "foodImage": "https://img.freepik.com/free-photo/plate-biryani-with-bowl-rice-bowl-food-table_505751-3814.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Indian",
+      "price": 14.99,
+      "quantity": 9,
+      "foodOrigin": "India",
+      "madeBy": "Taj Mahal Spice House",
+      "description": "A fragrant and flavorful Indian dish with tender lamb and aromatic spices, served with basmati rice."
+    },
+    {
+      "foodName": "Apple Pie",
+      "foodImage": "https://img.freepik.com/free-photo/homemade-mini-apple-pie-with-cinnamon_114579-13207.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Dessert",
+      "price": 8.50,
+      "quantity": 12,
+      "foodOrigin": "United States",
+      "madeBy": "Homemade Pies Bakery",
+      "description": "A classic American apple pie with a flaky crust and cinnamon-spiced apple filling."
+    },
+    {
+      "foodName": "Mojito Cocktail",
+      "foodImage": "https://img.freepik.com/free-photo/mojito-drink-with-lime-lemon-mint-wood-table_1150-12269.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Beverage",
+      "price": 8.99,
+      "quantity": 15,
+      "foodOrigin": "Cuba",
+      "madeBy": "Mojito Bar",
+      "description": "A refreshing and minty Mojito cocktail with a hint of lime and rum."
+    },
+    {
+      "foodName": "Szechuan Tofu",
+      "foodImage": "https://img.freepik.com/free-photo/tasty-appetizing-chunks-tofu-with-sauce-served-bowl-ready-eating-closeup_1220-5458.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Chinese",
+      "price": 12.99,
+      "quantity": 8,
+      "foodOrigin": "China",
+      "madeBy": "Red Dragon Wok",
+      "description": "Spicy Szechuan-style tofu stir-fry with vibrant flavors and crunchy vegetables."
+    },
+    {
+      "foodName": "Chicken Katsu",
+      "foodImage": "https://img.freepik.com/free-photo/tonkatsu-pork-japanese-style-food_1150-10911.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Japanese",
+      "price": 13.99,
+      "quantity": 9,
+      "foodOrigin": "Japan",
+      "madeBy": "Katsu Kingdom",
+      "description": "Crispy breaded chicken cutlets served with a savory sauce and rice."
+    },
+    {
+      "foodName": "Tiramisu",
+      "foodImage": "https://img.freepik.com/free-photo/layered-chocolate-tiramisu-cake-with-mascarpone-cream-generated-by-ai_188544-18033.jpg?t=st=1699222529~exp=1699226129~hmac=863fbfc3ebb6902d6b1e47c12f5af050a5ae2ffe3e136e416dd074fcd8bb86b4&w=996",
+      "foodCategory": "Dessert",
+      "price": 9.50,
+      "quantity": 11,
+      "foodOrigin": "Italy",
+      "madeBy": "Dolce Vita Patisserie",
+      "description": "A classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cheese."
+    },
+    {
+      "foodName": "Mint Chocolate Chip Ice Cream",
+      "foodImage": "https://img.freepik.com/free-photo/top-view-tasty-ice-cream-cones-with-topping_23-2148425444.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Dessert",
+      "price": 6.99,
+      "quantity": 16,
+      "foodOrigin": "United States",
+      "madeBy": "Sweet Scoops Creamery",
+      "description": "Indulge in the refreshing taste of mint chocolate chip ice cream."
+    },
+   
+    {
+      "foodName": "Tom Yum Soup",
+      "foodImage": "https://img.freepik.com/free-photo/thai-food-tom-yum-seafood-seafood-spicy-soup_1150-38147.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Thai",
+      "price": 10.99,
+      "quantity": 10,
+      "foodOrigin": "Thailand",
+      "madeBy": "Spice Thai Kitchen",
+      "description": "A tangy and spicy Thai soup with shrimp, mushrooms, and aromatic herbs."
+    },
+    {
+      "foodName": "Bruschetta",
+      "foodImage": "https://img.freepik.com/free-photo/tapas-appetizers_144627-20863.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=sph",
+      "foodCategory": "Italian",
+      "price": 7.99,
+      "quantity": 14,
+      "foodOrigin": "Italy",
+      "madeBy": "Casa di Pasta",
+      "description": "A delightful appetizer with grilled bread topped with fresh tomatoes, basil, garlic, and olive oil."
+    },
+    {
+      "foodName": "Hawaiian Pizza",
+      "foodImage": "https://img.freepik.com/premium-photo/pizza-cut-slices_661031-309.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Pizza",
+      "price": 12.99,
+      "quantity": 9,
+      "foodOrigin": "United States",
+      "madeBy": "Pizzeria Aloha",
+      "description": "Enjoy the tropical flavors of Hawaiian pizza with ham, pineapple, and mozzarella cheese."
+    },
+    {
+      "foodName": "Ceviche",
+      "foodImage": "https://img.freepik.com/free-photo/mexican-food-ai-generated-image_511042-1770.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=sph",
+      "foodCategory": "Seafood",
+      "price": 11.50,
+      "quantity": 12,
+      "foodOrigin": "Peru",
+      "madeBy": "Marina's Catch",
+      "description": "Fresh and zesty ceviche made with diced fish, lime juice, cilantro, and onions."
+    },
+    {
+      "foodName": "Eclairs",
+      "foodImage": "https://img.freepik.com/free-photo/chocolate-berry-eclairs-closeup-black-background_169016-18556.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=sph",
+      "foodCategory": "Dessert",
+      "price": 6.99,
+      "quantity": 18,
+      "foodOrigin": "France",
+      "madeBy": "Éclair Delights",
+      "description": "Indulge in delicious éclairs filled with creamy pastry cream and topped with chocolate glaze."
+    },
+    {
+      "foodName": "Chicken Quesadilla",
+      "foodImage": "https://img.freepik.com/free-photo/mexican-quesadilla-wrap-with-chicken-corn-sweet-pepper-salsa_2829-11768.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Mexican",
+      "price": 9.99,
+      "quantity": 15,
+      "foodOrigin": "Mexico",
+      "madeBy": "Casa de Quesadillas",
+      "description": "A cheesy and flavorful chicken quesadilla served with salsa and sour cream."
+    },
+    {
+      "foodName": "Falafel Wrap",
+      "foodImage": "https://img.freepik.com/free-photo/fresh-gourmet-meat-meal-with-healthy-vegetables-generative-ai_188544-8096.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Middle Eastern",
+      "price": 8.99,
+      "quantity": 16,
+      "foodOrigin": "Lebanon",
+      "madeBy": "Falafel Oasis",
+      "description": "A satisfying falafel wrap with tahini sauce, fresh veggies, and pita bread."
+    },
+    {
+      "foodName": "Salmon Teriyaki",
+      "foodImage": "https://img.freepik.com/free-photo/grilled-salmon-fillet-with-asparagus-broccoli-generated-by-ai_188544-18288.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Japanese",
+      "price": 14.99,
+      "quantity": 7,
+      "foodOrigin": "Japan",
+      "madeBy": "Teriyaki Haven",
+      "description": "Grilled salmon glazed with teriyaki sauce, served with steamed rice and vegetables."
+    },
+    {
+      "foodName": "Key Lime Pie",
+      "foodImage": "https://img.freepik.com/free-photo/yellow-lemon-meringue-tart-sweet-indulgence-generated-by-ai_188544-18178.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
+      "foodCategory": "Dessert",
+      "price": 7.50,
+      "quantity": 20,
+      "foodOrigin": "United States",
+      "madeBy": "Tropical Treats Bakery",
+      "description": "Taste the tangy and sweet flavors of Key Lime Pie with a graham cracker crust."
     }
+
   ]
+  
   
