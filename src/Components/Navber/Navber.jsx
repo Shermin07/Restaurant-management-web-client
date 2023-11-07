@@ -1,19 +1,35 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext, auth } from "../../Provider/AuthProvider";
+import { signOut } from "firebase/auth";
 
 
 const Navber = () => {
-   
+  const {user,logOut} = useContext(AuthContext);
   
+   
+  const handleSignOut = () =>{
+    logOut(auth)
+    .then(result =>{
+        console.log(result)
+       
+    } )
+    .catch(error =>{
+        console.log(error)
+    })
+  }
 
     const navLinks = <>
     
       <li><NavLink to='/'>Home</NavLink></li>
       <li><NavLink to='/allFoodItems'>All Food Items</NavLink></li>
       <li><NavLink to='/blog'>Blog</NavLink></li>
-      <li><NavLink to='/login'>Login</NavLink></li>
+      {
+        user ? <li><Link onClick={handleSignOut} className="btn">LogOut</Link></li> :   <li><NavLink to='/login'>Login</NavLink></li>
+      }
+     </>
 
-     
-    </>
+
 
     return (
         <div>

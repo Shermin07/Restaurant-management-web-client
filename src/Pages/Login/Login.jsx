@@ -11,7 +11,7 @@ const Login = () => {
     const [loginError, setLoginError] = useState('') ;
     const [loginSuccess, setLoginSuccess] = useState('') ;
     const [showPassword, setShowPassword] = useState(false) ;
-    const [user, setUser] = useState() ;
+
 
     const provider = new GoogleAuthProvider()
 
@@ -56,16 +56,7 @@ const Login = () => {
 
       }
 
-const handleSignOut = () =>{
-    signOut(auth)
-    .then(result =>{
-        console.log(result)
-        setUser(null)
-    } )
-    .catch(error =>{
-        console.log(error)
-    })
-}
+
      
 
     return (
@@ -113,10 +104,10 @@ const handleSignOut = () =>{
                      <button  className="btn text-sky-700 bg-white font-bold text-xl">Login</button>
                      <p className='mt-1'>Do not have an account? Please <Link to='/register' className='text-sky-700 underline'>Register</Link></p>
                      
-                     {
-            user ? <button onClick={handleSignOut}>SignOut</button> :
+                     
+        
             <Link onClick={handleGoogleSignIn}  className="btn mt-3 text-sky-700 bg-white font-bold text-xl">Google</Link>
-        }
+        
                      
                    </div>
                  </form>
