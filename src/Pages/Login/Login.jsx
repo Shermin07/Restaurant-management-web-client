@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AiFillEyeInvisible,  AiFillEye} from 'react-icons/ai'
+import Swal from "sweetalert2";
+import { AuthContext } from '../../Provider/AuthProvider';
 
 const Login = () => {
+    const { signIn} = useContext(AuthContext);
+    const [loginError, setLoginError] = useState('') ;
+    const [loginSuccess, setLoginSuccess] = useState('') ;
+    const [showPassword, setShowPassword] = useState(false) ;
 
 
      const handleLogin = e =>{
+        setLoginSuccess('');
+        setLoginError('');
         e.preventDefault();
        // console.log('hello')
 
@@ -12,11 +21,28 @@ const Login = () => {
         const password = e.target.password.value ;
         console.log(email, password)
 
-        
-     }
+        if(password < 6 || !/[A-Z]/.test(password) || !/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password)){
+            Swal.fire('Password should be more than 6 charecters and one upper letter and a special cherecter')
+            return ;
+        }
+
+        // signin
+        signIn(email, password)
+        .then(result =>{
+          console.log(result.user)
+         e.target.reset() ;
+          Swal.fire("Your login successfully done! now you can visit our website")
+        })
+        .catch(error =>{
+          Swal.fire('Please register first')
+        })
+      }
+
+
+     
 
     return (
-        <div className="hero   ">
+        <div className="hero">
              
         <div className="hero-content  flex-col lg:flex-row">
         
@@ -42,18 +68,30 @@ const Login = () => {
                 <label className="label">
                   <span className="label-text  font-bold text-md text-sky-700">Password</span>
                 </label>
-                <input type="password" name='password' placeholder="password" className="input input-bordered" required />
+                <input type={showPassword ? 'text' :'password'} name='password' placeholder="password" className="input input-bordered" required />
+                <span className="absolute mt-[51px] ml-[290px] md:mt-[51px] md:ml-[410px]" onClick={ () => setShowPassword(!showPassword)}>
+      {
+       showPassword?<AiFillEye></AiFillEye> : <AiFillEyeInvisible></AiFillEyeInvisible>  } 
+      </span>
                 <label className="label">
                   <a href="#" className="label-text-alt link text-sky-700 font-bold text-lg link-hover">Forgot password?</a>
                 </label>
               </div>
               <div className="form-control mt-6">
                 <button  className="btn text-sky-700 bg-white font-bold text-xl">Login</button>
+                <p className='mt-1'>Do not have an account? Please <Link to='/register' className='text-sky-700 underline'>Register</Link></p>
                 
                 <Link  className="btn mt-3 text-sky-700 bg-white font-bold text-xl">Google</Link>
                 
               </div>
             </form>
+            {
+    loginError && <p className="ml-7 text-red-400 mb-3">{loginError}</p>
+    
+     }
+  {
+    loginSuccess && <p className="ml-7 text-green-700 mb-3">{loginSuccess}</p>
+  }
           </div>
         </div>
       </div>

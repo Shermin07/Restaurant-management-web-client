@@ -2,7 +2,8 @@ import { NavLink } from "react-router-dom";
 
 
 const Navber = () => {
-
+   
+  
 
     const navLinks = <>
     
