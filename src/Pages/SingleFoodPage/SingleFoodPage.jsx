@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
 
-import SingleFoodCom from "../../Components/SingleFoodCom/SingleFoodCom";
-import {  useLoaderData, useParams } from "react-router-dom";
+
+
+import {  Link, useLoaderData } from "react-router-dom";
 
 
 const SingleFoodPage = () => {
@@ -12,13 +12,19 @@ const SingleFoodPage = () => {
   
  return (
         <div>
-      <div className="card card-compact w-96 bg-base-100 shadow-xl">
+      <div className="card card-compact mt-8 bg-base-100 shadow-xl">
         <figure><img src={singleFoodData.foodImage} alt="Shoes" /></figure>
-        <div className="card-body">
-          <h2 className="card-title"></h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+        <div className="card-body font-semibold text-xl text-center">
+          <h2 className=" font-semibold text-2xl text-center">Item Name: {singleFoodData.foodName}</h2>
+          <p>Category: {singleFoodData.foodCategory}</p>
+          <p>Food Origin: {singleFoodData.foodOrigin
+}</p>
+          <p>Made By: {singleFoodData.madeBy}</p>
+          <p>Price: {singleFoodData.price} $</p>
+          <p>Description: {singleFoodData.description}</p>
+          <div className="card-actions justify-center">
+            <Link to='/foodPurchase' className="btn">Order Now</Link>
+           
           </div>
         </div>
       </div>
