@@ -1,6 +1,8 @@
 
 
 import Banner from "../../Components/Banner/Banner";
+
+import MostSellingItem from "../../Components/MostSellingItem/MostSellingItem";
 import TopFoodSection from "../../Components/TopFoodSection/TopFoodSection";
 
 const Home = () => {
@@ -9,6 +11,8 @@ const Home = () => {
           
             <Banner></Banner>
             <TopFoodSection></TopFoodSection>
+            <MostSellingItem></MostSellingItem>
+          
         </div>
        
     );

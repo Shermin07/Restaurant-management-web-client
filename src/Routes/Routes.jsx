@@ -10,6 +10,8 @@ import Register from "../Pages/Register/Register";
 import AddFoodItem from "../Pages/AddFoodItem/AddFoodItem";
 import MyAddedItems from "../Pages/MyAddedItems/MyAddedItems";
 import MyOrderedItems from "../Pages/MyOrderedItems/MyOrderedItems";
+import Update from "../Pages/Update/Update";
+import Error from "../Pages/Error/Error";
 
 export const router = createBrowserRouter([
     {
@@ -56,11 +58,21 @@ export const router = createBrowserRouter([
         {
          path:'/MyaddedItems',
          element:<MyAddedItems></MyAddedItems>,
-         loader : () => fetch('http://localhost:5000/addFoodItem')
+         loader : () =>fetch('http://localhost:5000/addFoodItem')
         },
         {
           path: '/myOrderedItems',
           element:<MyOrderedItems></MyOrderedItems>
+        },
+        {
+          path:'/update/:id',
+          element:<Update></Update>,
+          loader : ({params}) =>fetch(`http://localhost:5000/addFoodItem/${params.id}`)
+        
+        },
+        {
+          path:'*',
+          element:<Error></Error>
         }
       ]
     },

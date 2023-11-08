@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 import { AiFillEyeInvisible,  AiFillEye} from 'react-icons/ai'
 import Swal from "sweetalert2";
 import { AuthContext, auth } from '../../Provider/AuthProvider';
-import { GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
+
 import { useContext, useState } from 'react';
 
 const Login = () => {
-    const { signIn} = useContext(AuthContext);
+    const { signIn,signInWithGoogle} = useContext(AuthContext);
     const [loginError, setLoginError] = useState('') ;
     const [loginSuccess, setLoginSuccess] = useState('') ;
     const [showPassword, setShowPassword] = useState(false) ;
 
 
-    const provider = new GoogleAuthProvider()
+   
 
      const handleLogin = e =>{
         setLoginSuccess('');
@@ -44,7 +44,7 @@ const Login = () => {
       
       const handleGoogleSignIn = () =>{
         //console.log('Hello from google')
-        signInWithPopup(auth, provider)
+        signInWithGoogle()
         .then(res =>{
            // const loggedInUser = res.user ;
             console.log(res) ;

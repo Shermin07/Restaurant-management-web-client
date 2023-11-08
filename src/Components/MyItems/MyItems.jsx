@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const MyItems = ({items}) => {
-    const { name,category,origin,photo,price} = items
+    const {_id,name,category,origin,photo,price} = items ;
     return (
         <div>
            <div className="card bg-slate-200 mx-3 h-[450px] card-compact  ">
@@ -13,7 +13,7 @@ const MyItems = ({items}) => {
     <p className="font-semibold">Origin: {origin}</p>
     <p className="font-semibold">Price: {price} $</p>
     <div className="card-actions justify-center">
-        <Link to='update' className="btn">Update</Link>
+        <Link to={`/update/${_id}`} className="btn">Update</Link>
      
     </div>
   </div>

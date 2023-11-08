@@ -1,11 +1,12 @@
 /* eslint-disable no-unreachable */
 import {  createContext, useEffect, useState } from "react";
 import app from "../Firebase/firebase.init";
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 
 
 export const auth = getAuth(app);
  export const AuthContext = createContext(null) ;
+ const provider = new GoogleAuthProvider()
 
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null);
@@ -23,7 +24,7 @@ const AuthProvider = ({children}) => {
         const unsubscribe =  onAuthStateChanged(auth, currentUser =>{
               console.log('User in the auth state changed', currentUser),
               setUser(currentUser);
-              setLoading(true);
+              setLoading(false);
           })
           return() =>{
               unsubscribe() ;
@@ -40,6 +41,11 @@ const AuthProvider = ({children}) => {
     return signOut(auth)
     setLoading(true);
  }
+ // sign in with google
+ const signInWithGoogle =() =>{
+    setLoading(true)
+    return signInWithPopup(auth,provider);
+ }
 
 
 
@@ -48,7 +54,8 @@ const AuthProvider = ({children}) => {
         loading,
         createUser,
         signIn,
-        logOut
+        logOut,
+        signInWithGoogle
 
     }
     return (

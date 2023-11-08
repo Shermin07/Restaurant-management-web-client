@@ -226,7 +226,7 @@
       "foodName": "Chicken Quesadilla",
       "foodImage": "https://img.freepik.com/free-photo/mexican-quesadilla-wrap-with-chicken-corn-sweet-pepper-salsa_2829-11768.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais",
       "foodCategory": "Mexican",
-      "price": 9.99,
+      "price": 9.99,                                       
       "quantity": 15,
       "foodOrigin": "Mexico",
       "madeBy": "Casa de Quesadillas",

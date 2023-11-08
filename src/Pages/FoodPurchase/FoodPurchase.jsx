@@ -93,7 +93,7 @@ const FoodPurchase = () => {
           <label className="label">
             <span className="label-text text-white">Buyer Email</span>
           </label>
-          <input type="email" placeholder="Email" defaultValue={user?.email} name='name'className="input  w-[300px] input-bordered" required />
+          <input type="email" placeholder="Email" defaultValue={user?.email} name='email'className="input  w-[300px] input-bordered" required />
         
         </div>
        <div className="form-control">
