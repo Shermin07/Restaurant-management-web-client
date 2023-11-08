@@ -43,7 +43,7 @@ const FoodPurchase = () => {
        .then(data =>{
 
         if(data.insertedId){
-           new Swal('Order Successfull')
+           new Swal('Order Successfully Done')
         }
        // console.log(data)
        })
