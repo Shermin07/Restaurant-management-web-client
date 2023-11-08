@@ -7,6 +7,9 @@ import SingleFoodPage from "../Pages/SingleFoodPage/SingleFoodPage";
 import FoodPurchase from "../Pages/FoodPurchase/FoodPurchase";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import AddFoodItem from "../Pages/AddFoodItem/AddFoodItem";
+import MyAddedItems from "../Pages/MyAddedItems/MyAddedItems";
+import MyOrderedItems from "../Pages/MyOrderedItems/MyOrderedItems";
 
 export const router = createBrowserRouter([
     {
@@ -45,6 +48,19 @@ export const router = createBrowserRouter([
         {
           path:'/register',
           element:<Register></Register>
+        },
+        {
+          path:'/addAFoodItem',
+          element:<AddFoodItem></AddFoodItem>
+        },
+        {
+         path:'/MyaddedItems',
+         element:<MyAddedItems></MyAddedItems>,
+         loader : () => fetch('http://localhost:5000/addFoodItem')
+        },
+        {
+          path: '/myOrderedItems',
+          element:<MyOrderedItems></MyOrderedItems>
         }
       ]
     },

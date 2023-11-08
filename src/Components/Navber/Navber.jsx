@@ -25,7 +25,7 @@ const Navber = () => {
       <li><NavLink to='/allFoodItems'>All Food Items</NavLink></li>
       <li><NavLink to='/blog'>Blog</NavLink></li>
       {
-        user ? <li><Link onClick={handleSignOut} className="btn">LogOut</Link></li> :   <li><NavLink to='/login'>Login</NavLink></li>
+        user ? <li><Link onClick={handleSignOut} >LogOut</Link></li> :   <li><NavLink to='/login'>Login</NavLink></li>
       }
      </>
 
@@ -54,7 +54,17 @@ const Navber = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+  <div className="dropdown dropdown-end">
+        <label tabIndex={0} ><img className="w-24" src="https://img.freepik.com/premium-vector/account-icon-user-icon-vector-graphics_292645-552.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais"></img></label>
+        <ul tabIndex={0} className="menu dropdown-content z-[1] p-2 bg-base-100 rounded-box w-52 mt-4">
+          <Link to='/addAFoodItem'>Add a food item</Link>
+          <Link to='/MyaddedItems'>My added food items</Link>
+          <Link to='/myOrderedItems'>My orderd food items</Link>
+        
+         
+         
+        </ul>
+      </div>
   </div>
 </div>
         </div>

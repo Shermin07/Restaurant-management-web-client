@@ -7,7 +7,7 @@ import { GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
 import { useContext, useState } from 'react';
 
 const Login = () => {
-    const {user,setUser, signIn} = useContext(AuthContext);
+    const { signIn} = useContext(AuthContext);
     const [loginError, setLoginError] = useState('') ;
     const [loginSuccess, setLoginSuccess] = useState('') ;
     const [showPassword, setShowPassword] = useState(false) ;
@@ -46,9 +46,9 @@ const Login = () => {
         //console.log('Hello from google')
         signInWithPopup(auth, provider)
         .then(res =>{
-            const loggedInUser = res.user ;
-            //console.log(user) ;
-            setUser(loggedInUser)
+           // const loggedInUser = res.user ;
+            console.log(res) ;
+            //setUser(loggedInUser)
         })
         .catch(error =>{
             console.log('error', error)
