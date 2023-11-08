@@ -7,7 +7,7 @@ import { GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
 import { useContext, useState } from 'react';
 
 const Login = () => {
-    const { signIn} = useContext(AuthContext);
+    const {user,setUser, signIn} = useContext(AuthContext);
     const [loginError, setLoginError] = useState('') ;
     const [loginSuccess, setLoginSuccess] = useState('') ;
     const [showPassword, setShowPassword] = useState(false) ;

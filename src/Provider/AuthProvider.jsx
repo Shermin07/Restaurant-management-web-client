@@ -12,11 +12,14 @@ const AuthProvider = ({children}) => {
     const [loading, setLoading] = useState(false)
 
     //signup
-    const createUser = (email, password) =>{
-        return createUserWithEmailAndPassword(auth, email, password)
-        setLoading(true);
-
-     }
+    const createUser = (email, password) => {
+        return createUserWithEmailAndPassword(auth, email, password).then((userCredential) => {
+          const createdUser = userCredential.user;
+          setUser(createdUser);
+          setLoading(true);
+        });
+      };
+    
 
      //onAuthStateChange
      useEffect(() =>{
@@ -31,15 +34,20 @@ const AuthProvider = ({children}) => {
        },[])
 
   // signIn
-  const signIn = (email,password) =>{
-    return signInWithEmailAndPassword(auth, email, password);
-    setLoading(true);
- }
+  const signIn = (email, password) => {
+    return signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
+      const signedInUser = userCredential.user;
+      setUser(signedInUser);
+      setLoading(true);
+    });
+  };
  // logout
- const logOut = () =>{
-    return signOut(auth)
-    setLoading(true);
- }
+ const logOut = () => {
+    return signOut(auth).then(() => {
+      setUser(null);
+      setLoading(true);
+    });
+  };
 
 
 
