@@ -6,6 +6,7 @@ import { AuthContext, auth } from '../../Provider/AuthProvider';
 
 import { useContext, useState } from 'react';
 import { Helmet } from 'react-helmet';
+import axios from 'axios';
 
 const Login = () => {
     const { signIn,signInWithGoogle} = useContext(AuthContext);
@@ -26,7 +27,7 @@ const Login = () => {
 
         const email = e.target.email.value ;
         const password = e.target.password.value ;
-        console.log(email, password)
+       // console.log(email, password)
 
         if(password < 6 || !/[A-Z]/.test(password) || !/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password)){
             Swal.fire('Password should be more than 6 charecters and one upper letter and a special cherecter')
@@ -36,11 +37,18 @@ const Login = () => {
         // signin
         signIn(email, password)
         .then(result =>{
-          console.log(result.user)
+          const loggedInUser = result.user ;
+          console.log(loggedInUser)
+          const user = {email}
          e.target.reset() ;
 
           Swal.fire("Your login successfully done! now you can visit our website")
-          navigate(location?.state ? location?.state: '/')
+         // navigate(location?.state ? location?.state: '/')
+         //acess token
+         axios.post('http://localhost:5000/jwt',user)
+         .then(res =>{
+          console.log(res.data)
+         })
         })
         .catch(error =>{
           Swal.fire('Please register first')
