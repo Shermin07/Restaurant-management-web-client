@@ -58,6 +58,7 @@ const AllFoodItems = () => {
    
     return (
        <div>
+        <h1 className="text-center font-bold text-4xl mb-6 text-green-700">Delightful Dining Choices </h1>
 
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -70,7 +71,7 @@ const AllFoodItems = () => {
 
       
         
-    <div className="pagination mt-12  pl-[500px]">
+    <div className="pagination mt-12 pl-[100px] md:pl-[300px] lg:pl-[450px] xl:pl-[500px]">
    
     <button onClick={handlePrevious} className="mr-3 border rounded-md bg-black text-white px-1">previous</button>
     {

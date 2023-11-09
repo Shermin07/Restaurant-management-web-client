@@ -1,5 +1,5 @@
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AiFillEyeInvisible,  AiFillEye} from 'react-icons/ai'
 import Swal from "sweetalert2";
 import { AuthContext, auth } from '../../Provider/AuthProvider';
@@ -11,6 +11,8 @@ const Login = () => {
     const [loginError, setLoginError] = useState('') ;
     const [loginSuccess, setLoginSuccess] = useState('') ;
     const [showPassword, setShowPassword] = useState(false) ;
+    const location = useLocation();
+    const navigate = useNavigate();
 
 
    
@@ -35,7 +37,9 @@ const Login = () => {
         .then(result =>{
           console.log(result.user)
          e.target.reset() ;
+
           Swal.fire("Your login successfully done! now you can visit our website")
+          navigate(location?.state ? location?.state: '/')
         })
         .catch(error =>{
           Swal.fire('Please register first')

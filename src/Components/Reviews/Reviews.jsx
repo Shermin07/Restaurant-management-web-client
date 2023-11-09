@@ -10,11 +10,11 @@ const Reviews = () => {
         
       <div>
         <h1 className="text-center text-3xl mt-12 mb-4 font-bold">Best Reviews</h1>
-          <div className="flex gap-4">
+          <div className="lg:flex gap-4 grid grid-cols-1">
        
-       <div className=" h-[400px]   border-2">
+       <div className="md:h-[580px] lg:h-[400px]   border-2">
    <figure className="px-10 pt-10">
-     <img   src="https://img.freepik.com/free-photo/grilled-salmon-fillet-with-asparagus-broccoli-generated-by-ai_188544-18288.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais" alt="Shoes" className="rounded-lg pl-11 h-32" />
+     <img   src="https://img.freepik.com/free-photo/grilled-salmon-fillet-with-asparagus-broccoli-generated-by-ai_188544-18288.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais" alt="Shoes" className="rounded-lg pl-11 md:h-[56] lg:h-32" />
    </figure>
    <div className="card-body items-center text-center">
      <h2 className="card-title">Item: Salmon Teriyaki</h2>
@@ -31,9 +31,9 @@ const Reviews = () => {
      </div>
    </div>
  </div>
-       <div className="h-[400px]   border-2">
+       <div className="md:h-[580px] lg:h-[400px]   border-2">
    <figure className="px-10 pt-10">
-     <img src="https://img.freepik.com/free-photo/arabic-kebab-sandwich-top-view_23-2148651073.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais" alt="Shoes" className="rounded-xl pl-11 h-32" />
+     <img src="https://img.freepik.com/free-photo/arabic-kebab-sandwich-top-view_23-2148651073.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais" alt="Shoes" className="rounded-xl pl-11 md:h-[56] lg:h-32" />
    </figure>
    <div className="card-body items-center text-center">
      <h2 className="card-title">Item: Gyros Platter</h2>
@@ -50,9 +50,9 @@ const Reviews = () => {
      </div>
    </div>
  </div>
-       <div className=" h-[400px]   border-2">
+       <div className=" md:h-[580px] lg:h-[400px]   border-2">
    <figure className="px-10 pt-10">
-     <img src="https://img.freepik.com/free-photo/grilled-salmon-fillet-with-asparagus-broccoli-generated-by-ai_188544-18288.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais" alt="Shoes" className="rounded-xl pl-11 h-32" />
+     <img src="https://img.freepik.com/free-photo/grilled-salmon-fillet-with-asparagus-broccoli-generated-by-ai_188544-18288.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais" alt="Shoes" className="rounded-xl pl-11 md:h-[56] lg:h-32" />
    </figure>
    <div className="card-body items-center text-center">
      <h2 className="card-title">Item: Mango Sticky Rice</h2>

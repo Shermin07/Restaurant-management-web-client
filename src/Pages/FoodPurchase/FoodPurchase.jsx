@@ -59,7 +59,7 @@ const FoodPurchase = () => {
    
     <div className="card  max-w-full ">
       <form onSubmit={handlePurchase} className="">
-       <div className="flex gap-4">
+       <div className="grid grid-cols-1 md:flex gap-4">
        <div className="form-control">
           <label className="label">
             <span className="label-text text-white">Food Name</span>
@@ -73,7 +73,7 @@ const FoodPurchase = () => {
           <input type="text" placeholder="Price" name="price" className="input w-[300px] input-bordered" required />
         </div>
        </div>
-       <div className="flex gap-4">
+       <div className="grid grid-cols-1 md:flex gap-4">
        <div className="form-control">
           <label className="label">
             <span className="label-text text-white">Quantity</span>
@@ -90,7 +90,7 @@ const FoodPurchase = () => {
          
         </div>
        </div>
-       <div className="flex gap-4">
+       <div className="grid grid-cols-1 md:flex gap-4">
        <div className="form-control">
           <label className="label">
             <span className="label-text text-white">Buyer Email</span>
@@ -110,7 +110,7 @@ const FoodPurchase = () => {
           <label className="label">
             <span className="label-text text-white">Photo</span>
           </label>
-          <input type="text" placeholder="Photo" name="photo" className="input  w-[400px] input-bordered" required />
+          <input type="text" placeholder="Photo" name="photo" className="input  w-[390px] input-bordered" required />
          
         </div>
 

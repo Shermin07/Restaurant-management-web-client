@@ -61,11 +61,11 @@ const Update = () => {
 
     return (
         <div>
-           <div className="hero-content bg-green-900  ">
+           <div className="hero-content w-full bg-green-900  ">
    
    <div className="card  max-w-full ">
      <form onSubmit={handleUpdate}  className="">
-      <div className="flex gap-4">
+      <div className=" grid grid-cols-1 md:flex gap-4">
       <div className="form-control">
          <label className="label">
            <span className="label-text text-white">Food Name</span>
@@ -79,7 +79,7 @@ const Update = () => {
          <input type="text" placeholder="Price" name="price" defaultValue={'$'} className="input w-[300px] input-bordered" required />
        </div>
       </div>
-      <div className="flex gap-4">
+      <div className="grid grid-cols-1 md:flexgap-4">
       <div className="form-control">
          <label className="label">
            <span className="label-text text-white">Quantity</span>
@@ -96,7 +96,7 @@ const Update = () => {
         
        </div>
       </div>
-      <div className="flex gap-4">
+      <div className="grid grid-cols-1 md:flex gap-4">
       <div className="form-control">
          <label className="label">
            <span className="label-text text-white">Buyer Email</span>
@@ -116,7 +116,7 @@ const Update = () => {
          <label className="label">
            <span className="label-text text-white">Photo</span>
          </label>
-         <input type="text" placeholder="Photo" name="photo" className="input  w-[610px] input-bordered" required />
+         <input type="text" placeholder="Photo" name="photo" className="input  md:w-[610px] input-bordered" required />
         
        </div>
 

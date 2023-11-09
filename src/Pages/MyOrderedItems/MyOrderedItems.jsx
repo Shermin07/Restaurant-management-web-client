@@ -19,6 +19,7 @@ const MyOrderedItems = () => {
   },[])
     return (
         <div>
+            <h1 className="text-center text-3xl font-bold text-green-800 mt-3 mb-5">My Cart</h1>
        <div className="grid grid-cols-1 md:grid  lg:grid-cols-3 gap-4">
         {
             myItems?.map(items => <MyOrderItemsCard key={items._id}

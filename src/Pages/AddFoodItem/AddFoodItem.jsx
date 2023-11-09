@@ -57,7 +57,7 @@ const {user} = useContext(AuthContext)
    <div className="card  max-w-full ">
      <form onSubmit={handleAdded} className="">
         <h1 className="text-center mt-7 text-white text-xl font-semibold">You can add food items from here</h1>
-      <div className="flex gap-4">
+      <div className="grid grid-cols-1 md:flex gap-4">
       <div className="form-control">
          <label className="label">
            <span className="label-text text-white">Food Name</span>
@@ -71,7 +71,7 @@ const {user} = useContext(AuthContext)
          <input type="text" placeholder="Category" name="category" className="input w-[300px] input-bordered" required />
        </div>
       </div>
-      <div className="flex gap-4">
+      <div className="grid grid-cols-1 md:flex gap-4">
       <div className="form-control">
          <label className="label">
            <span className="label-text text-white">Quantity</span>
@@ -88,7 +88,7 @@ const {user} = useContext(AuthContext)
         
        </div>
       </div>
-      <div className="flex gap-4">
+      <div className="grid grid-cols-1 md:flex gap-4">
       <div className="form-control">
          <label className="label">
            <span className="label-text text-white">Origin</span>
@@ -104,7 +104,7 @@ const {user} = useContext(AuthContext)
         
        </div>
       </div>
-      <div className="flex gap-4">
+      <div className="grid grid-cols-1 md:flex gap-4">
       <div className="form-control">
          <label className="label">
            <span className="label-text text-white">Photo</span>

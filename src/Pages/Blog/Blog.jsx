@@ -3,6 +3,7 @@
 const Blog = () => {
     return (
         <div className="mb-7">
+          <h1 className="text-3xl font-bold text-center text-cyan-900">Blogs</h1>
          <div className="card bg-cyan-900 text-white p-3 mx-2 mt-8 mb-4">
  
     <h2 className="card-title mb-3">Q: What is one way data building?</h2>

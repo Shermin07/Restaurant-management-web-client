@@ -43,10 +43,10 @@ const MyOrderItemsCard = ({items ,myItems, setMyItems}) => {
   <figure className='h-56 object-cover'><img src={photo} alt="food" /></figure>
   <div className="card-body">
     <h2 className="card-title">Item: {foodName}</h2>
-    <p>Price: {price}</p>
+    <p>Price: {price}$</p>
     <p>Quantity: {quantity}</p>
     <div className="card-actions justify-center">
-      <button onClick={() => handleDelete(_id)} className="btn btn-primary">Delete</button>
+      <button onClick={() => handleDelete(_id)} className="btn ">Delete</button>
     </div>
   </div>
 </div>  

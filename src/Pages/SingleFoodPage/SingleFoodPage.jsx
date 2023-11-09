@@ -12,6 +12,7 @@ const SingleFoodPage = () => {
   
  return (
         <div>
+          <h1 className="text-center font-bold text-3xl mb-5 mt-3 text-green-800">Featured Dish of the Day</h1>
       <div className="card card-compact mt-8 bg-base-100 shadow-xl">
         <figure><img src={singleFoodData.foodImage} alt="Shoes" /></figure>
         <div className="card-body font-semibold text-xl text-center">
