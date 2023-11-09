@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 
 const FoodPurchase = () => {
     const {user} = useContext(AuthContext)
-    console.log(user)
+    //console.log(user)
 
 
     const handlePurchase = e =>{
@@ -14,10 +14,11 @@ const FoodPurchase = () => {
        const price = e.target.price.value ; 
        const quantity = e.target.quantity.value ; 
        const buyerName = user?.buyerName ; 
+       const photo = e.target.photo.value  ; 
        const email = user?.email; 
 
        const date = e.target.date.value ; 
-       console.log(foodName,price,quantity,buyerName,email, date )
+       console.log(foodName,photo,price,quantity,buyerName,email, date )
 
        const purchaseItem = {
         foodName,
@@ -25,7 +26,8 @@ const FoodPurchase = () => {
         quantity,
         buyerName,
         email,
-        date 
+        date ,
+        photo
 
 
        }
@@ -104,6 +106,13 @@ const FoodPurchase = () => {
          
         </div>
        </div>
+       <div className="form-control">
+          <label className="label">
+            <span className="label-text text-white">Photo</span>
+          </label>
+          <input type="text" placeholder="Photo" name="photo" className="input  w-[400px] input-bordered" required />
+         
+        </div>
 
 
 
