@@ -3,6 +3,7 @@
 import { useLoaderData } from "react-router-dom";
 import AllFoodItemsCard from "../../Components/AllFoodItemsCards/AllFoodItemsCard";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 
 const AllFoodItems = () => {
@@ -58,6 +59,9 @@ const AllFoodItems = () => {
    
     return (
        <div>
+        <Helmet>
+          <title>Retro Diner Delights | All Food Items</title>
+        </Helmet>
         <h1 className="text-center font-bold text-4xl mb-6 text-green-700">Delightful Dining Choices </h1>
 
 

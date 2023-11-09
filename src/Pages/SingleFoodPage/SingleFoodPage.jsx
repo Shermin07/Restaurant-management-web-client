@@ -1,6 +1,7 @@
 
 
 
+import { Helmet } from "react-helmet";
 import {  Link, useLoaderData } from "react-router-dom";
 
 
@@ -12,6 +13,9 @@ const SingleFoodPage = () => {
   
  return (
         <div>
+           <Helmet>
+            <title>Retro Diner Delights | Single Food Page</title>
+          </Helmet>
           <h1 className="text-center font-bold text-3xl mb-5 mt-3 text-green-800">Featured Dish of the Day</h1>
       <div className="card card-compact mt-8 bg-base-100 shadow-xl">
         <figure><img src={singleFoodData.foodImage} alt="Shoes" /></figure>

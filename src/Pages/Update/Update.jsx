@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import { useLoaderData } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 
 const Update = () => {
@@ -61,6 +62,9 @@ const Update = () => {
 
     return (
         <div>
+             <Helmet>
+            <title>Retro Diner Delights | Update</title>
+          </Helmet>
            <div className="hero-content w-full bg-green-900  ">
    
    <div className="card  max-w-full ">

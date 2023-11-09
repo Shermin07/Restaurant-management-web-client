@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from '../../Provider/AuthProvider';
+import { Helmet } from 'react-helmet';
 
 const Register = () => {
     const {createUser} = useContext(AuthContext);
@@ -42,7 +43,11 @@ const Register = () => {
      }
 
     return (
-        <div className="hero min-h-screen ">
+       <div>
+         <Helmet>
+            <title>Retro Diner Delights | Register</title>
+          </Helmet>
+         <div className="hero min-h-screen ">
         <div className="hero-content flex-col lg:flex-row">
           <div className="text-center lg:text-left">
           <img className="w-[500px]" src="https://img.freepik.com/free-vector/user-verification-unauthorized-access-prevention-private-account-authentication-cyber-security-people-entering-login-password-safety-measures_335657-8.jpg?size=626&ext=jpg&uid=R121205384&ga=GA1.1.732846257.1688661449&semt=ais"></img>
@@ -102,6 +107,7 @@ const Register = () => {
           </div>
         </div>
       </div>
+       </div>
     );
 };
 

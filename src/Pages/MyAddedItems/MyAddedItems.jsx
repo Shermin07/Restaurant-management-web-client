@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import MyItems from "../../Components/MyItems/MyItems";
+import { Helmet } from "react-helmet";
 
 
 const MyAddedItems = () => {
@@ -9,7 +10,11 @@ const MyAddedItems = () => {
     console.log(myItems)
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+       <div>
+          <Helmet>
+          <title>Retro Diner Delights | My Added Items</title>
+        </Helmet>
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {
                 myItems?.map(items => <MyItems
                 items = {items}
@@ -20,6 +25,7 @@ const MyAddedItems = () => {
                 </MyItems>)
             }
         </div>
+       </div>
     );
 };
 

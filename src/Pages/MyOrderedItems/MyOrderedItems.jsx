@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import MyOrderItemsCard from "../../Components/MyOrderItemsCard/MyOrderItemsCard";
+import { Helmet } from "react-helmet";
 
 
 
@@ -19,6 +20,9 @@ const MyOrderedItems = () => {
   },[])
     return (
         <div>
+              <Helmet>
+          <title>Retro Diner Delights | My Ordered Items</title>
+        </Helmet>
             <h1 className="text-center text-3xl font-bold text-green-800 mt-3 mb-5">My Cart</h1>
        <div className="grid grid-cols-1 md:grid  lg:grid-cols-3 gap-4">
         {

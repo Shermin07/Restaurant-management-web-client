@@ -1,8 +1,13 @@
+import { Helmet } from "react-helmet";
 
 
 const Blog = () => {
     return (
         <div className="mb-7">
+         
+           <Helmet>
+          <title>Retro Diner Delights | Blogs</title>
+        </Helmet>
           <h1 className="text-3xl font-bold text-center text-cyan-900">Blogs</h1>
          <div className="card bg-cyan-900 text-white p-3 mx-2 mt-8 mb-4">
  

@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { Helmet } from "react-helmet";
 
 
 const AddFoodItem = () => {
@@ -51,6 +52,9 @@ const {user} = useContext(AuthContext)
     }
     return (
         <div>
+           <Helmet>
+          <title>Retro Diner Delights | Add Food Item</title>
+        </Helmet>
             
             <div className="hero-content bg-cyan-900  ">
    

@@ -5,6 +5,7 @@ import Swal from "sweetalert2";
 import { AuthContext, auth } from '../../Provider/AuthProvider';
 
 import { useContext, useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 const Login = () => {
     const { signIn,signInWithGoogle} = useContext(AuthContext);
@@ -68,6 +69,10 @@ const Login = () => {
 
 
        <div>
+      
+           <Helmet>
+          <title>Retro Diner Delights | Login</title>
+        </Helmet>
        
          <div className="hero">
              
@@ -89,7 +94,7 @@ const Login = () => {
                      <label className="label">
                        <span className="label-text  font-bold text-md text-sky-700">Email</span>
                      </label>
-                     <input type="email" name='email' placeholder="email" className="input input-bordered" required />
+                     <input type="email" name='email' placeholder="email" className="input  input-bordered" required />
                    </div>
                    <div className="form-control">
                      <label className="label">

@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 const FoodPurchase = () => {
     const {user} = useContext(AuthContext)
@@ -54,6 +55,12 @@ const FoodPurchase = () => {
 
     return (
         <div>
+
+
+           <Helmet>
+          <title>Retro Diner Delights | Food Purchase</title>
+        </Helmet>
+        <h1 className="text-center text-3xl mt-3 mb-5">You can purchase food from here</h1>
         
   <div className="hero-content bg-green-900  ">
    
